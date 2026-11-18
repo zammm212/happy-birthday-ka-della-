@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#10070f">
+<title>Happy Birthday Ka Della ♡</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<audio id="bgMusic" loop preload="auto">
+    <source src="assets/lagu.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicToggle" class="music-toggle" onclick="toggleMusic()">
+    ♫ MUSIC ON
+</button>
+<body>
+
+<div class="background-glow"></div>
+<div class="stars" id="stars"></div>
+<div class="petals" id="petals"></div>
+
+<!-- PAGE 1 -->
+<section class="page active" id="page1">
+
+    <div class="top-label">A PRIVATE LITTLE SURPRISE</div>
+
+    <div class="lock-circle">
+        <div class="orbit"></div>
+        <div class="lock-icon">♡</div>
+    </div>
+
+    <p class="subtitle">SOMETHING SPECIAL IS WAITING</p>
+
+    <h1>For You,<br><span>Ka Della.</span></h1>
+
+    <p class="description">
+        A little surprise made especially for your special day.
+    </p>
+
+    <div class="password-card">
+
+        <p class="clue-title">♡ PASSWORD CLUE ♡</p>
+        <p class="clue">tanggal lahir mu</p>
+
+        <input
+            type="password"
+            id="password"
+            placeholder="DDMMYYYY"
+            inputmode="numeric"
+        >
+
+        <button onclick="unlock()">
+            OPEN YOUR SURPRISE <span>↗</span>
+        </button>
+
+        <p id="error"></p>
+
+    </div>
+
+    <div class="bottom-label">MADE WITH LOVE ♡</div>
+
+</section>
+
+
+<!-- PAGE 2 -->
+<section class="page" id="page2">
+
+    <div class="page-number">01 / 04</div>
+
+    <div class="flower flower-one">✿</div>
+    <div class="flower flower-two">❀</div>
+
+    <p class="subtitle">TODAY IS YOUR DAY</p>
+
+    <div class="big-sparkle">✧</div>
+
+    <h1>Happy<br><span>Birthday!</span></h1>
+
+    <h2>Fadhilah Asy Syaumi</h2>
+
+    <p class="description">
+        A new chapter, a new collection of memories,
+        and another reason to celebrate you.
+    </p>
+
+    <button onclick="goTo(3)">
+        LET'S CELEBRATE →
+    </button>
+
+</section>
+
+
+<!-- PAGE 3 -->
+<section class="page" id="page3">
+
+    <div class="page-number">02 / 04</div>
+
+    <p class="subtitle">THE PERSON OF THE DAY</p>
+
+    <div class="photo-container">
+
+        <div class="photo-glow"></div>
+
+        <div class="photo-frame">
+            <img src="assets/foto.jpg" alt="Fadhilah Asy Syaumi">
+        </div>
+
+        <div class="photo-decoration">✿</div>
+        <div class="photo-heart">♡</div>
+
+    </div>
+
+    <h1><span>Ka Della</span></h1>
+
+    <p class="description">
+        Fadhilah Asy Syaumi
+    </p>
+
+    <button onclick="goTo(4)">
+        NEXT PAGE →
+    </button>
+
+</section>
+
+
+<!-- PAGE 4 -->
+<section class="page" id="page4">
+
+    <div class="page-number">03 / 04</div>
+
+    <p class="subtitle">A LITTLE MESSAGE FOR YOU</p>
+
+    <div class="message-icon">💗</div>
+
+    <h1>Dear <span>Ka Della</span></h1>
+
+    <div class="message-card">
+
+        <p>
+            Happy birthday, Ka Della!
+        </p>
+
+        <p>
+            Semoga panjang umur, sehat selalu,
+            dilancarkan semua urusannya,
+            dimudahkan dalam meraih impian,
+            dan selalu dikelilingi orang-orang
+            yang menyayangi ka dellaa.
+        </p>
+
+        <p>
+            Semoga di umur yang baru ini membawa banyak
+            kebahagiaan dan cerita indah.
+        </p>
+
+        <div class="message-end">WITH LOVE ♡</div>
+
+    </div>
+
+    <button onclick="goTo(5)">
+        ONE MORE THING →
+    </button>
+
+</section>
+  
+<section class="page" id="page5">
+    <div class="card gallery-card">
+        <p class="small-title">A LITTLE GALLERY</p>
+        <h1>Our Memories 📸</h1>
+        <div class="gallery">
+            <img src="assets/foto2.jpg" alt="Foto 2">
+            <img src="assets/foto3.jpg" alt="Foto 3">
+            <img src="assets/foto4.jpg" alt="Foto 4">
+            <img src="assets/foto5.jpg" alt="Foto 5">
+        </div>
+        <button onclick="goTo(6)">Next ♡</button>
+    </div>
+</section>
+
+<!-- PAGE 5 -->
+<section class="page" id="page6">
+
+    <div class="page-number">04 / 04</div>
+
+    <div class="ending-flower">🌸</div>
+
+    <p class="subtitle">AND BEFORE YOU GO...</p>
+
+    <h1>Stay Happy,<br><span>Ka Della.</span></h1>
+
+    <p class="description">
+        May your days be filled with happiness,
+        love, and beautiful memories.
+    </p>
+
+    <div class="ending-heart">♡</div>
+
+    <p class="signature">
+        Fadhilah Asy Syaumi
+    </p>
+
+    <div class="bottom-label">THIS LITTLE SURPRISE IS FOR YOU ♡</div>
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
